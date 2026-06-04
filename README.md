@@ -7,6 +7,32 @@
 
 ---
 
+## Reports
+
+### 1. Live Allure Report (GitHub Pages)
+```
+https://bbvines.github.io/portfolio-rebalancing-tests/allure-report
+```
+
+### 2. Artifacts (from any CI run)
+1. Go to `https://github.com/bbvines/portfolio-rebalancing-tests/actions`
+2. Click on any run
+3. Scroll down to **Artifacts** and download:
+
+| Artifact | Contents |
+|----------|---------|
+| `allure-report` | TestNG run HTML report |
+| `docker-allure-report` | Docker run HTML report |
+| `pmd-report` | PMD code analysis XML |
+
+### 3. PMD Report (local)
+```bash
+mvn site
+open target/site/pmd.html
+```
+
+---
+
 ## Tech Stack
 
 | Category | Technology | Version | Purpose |
