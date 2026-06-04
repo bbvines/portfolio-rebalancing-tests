@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="24.215" tests="42" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="/root/.cache/selenium/chromedriver/linux64/149.0.7827.54/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/app/target/test-classes:/app/target/classes:/root/.m2/repository/org/seleniumhq/selenium/selenium-java/4.18.1/selenium-java-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.18.1/selenium-chrome-driver-4.18.1.jar:/root/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.18.1/selenium-chromium-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-json/4.18.1/selenium-json-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.18.1/selenium-manager-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.18.1/selenium-devtools-v120-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.18.1/selenium-devtools-v121-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.18.1/selenium-devtools-v122-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.18.1/selenium-devtools-v85-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.18.1/selenium-edge-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.18.1/selenium-firefox-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-http/4.18.1/selenium-http-4.18.1.jar:/root/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.18.1/selenium-ie-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.18.1/selenium-remote-driver-4.18.1.jar:/root/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/root/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/root/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/root/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/root/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api/1.35.0/opentelemetry-api-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-context/1.35.0/opentelemetry-context-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.35.0/opentelemetry-exporter-logging-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.35.0/opentelemetry-sdk-common-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.35.0/opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.35.0/opentelemetry-sdk-extension-autoconfigure-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.35.0-alpha/opentelemetry-api-events-1.35.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.35.0/opentelemetry-sdk-trace-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.35.0-alpha/opentelemetry-extension-incubator-1.35.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.35.0/opentelemetry-sdk-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.35.0/opentelemetry-sdk-metrics-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.35.0/opentelemetry-sdk-logs-1.35.0.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-os/4.18.1/selenium-os-4.18.1.jar:/root/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.18.1/selenium-safari-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-support/4.18.1/selenium-support-4.18.1.jar:/root/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/root/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/root/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/root/.m2/repository/io/github/bonigarcia/webdrivermanager/5.7.0/webdrivermanager-5.7.0.jar:/root/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/root/.m2/repository/com/github/docker-java/docker-java/3.3.5/docker-java-3.3.5.jar:/root/.m2/repository/com/github/docker-java/docker-java-core/3.3.5/docker-java-core-3.3.5.jar:/root/.m2/repository/com/github/docker-java/docker-java-api/3.3.5/docker-java-api-3.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/root/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/root/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/root/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/root/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/root/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.5/docker-java-transport-httpclient5-3.3.5.jar:/root/.m2/repository/com/github/docker-java/docker-java-transport/3.3.5/docker-java-transport-3.3.5.jar:/root/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/root/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/root/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/root/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/root/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/root/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/root/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/root/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/root/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/root/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/root/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/opt/java/openjdk/lib"/>
+    <property name="sun.java.command" value="/app/target/surefire/surefirebooter-20260604222727207_3.jar /app/target/surefire 2026-06-04T22-27-25_286-jvmRun1 surefire-20260604222727207_1tmp surefire_0-20260604222727207_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/app/target/test-classes:/app/target/classes:/root/.m2/repository/org/seleniumhq/selenium/selenium-java/4.18.1/selenium-java-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-api/4.18.1/selenium-api-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.18.1/selenium-chrome-driver-4.18.1.jar:/root/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.18.1/selenium-chromium-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-json/4.18.1/selenium-json-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.18.1/selenium-manager-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v120/4.18.1/selenium-devtools-v120-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.18.1/selenium-devtools-v121-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.18.1/selenium-devtools-v122-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.18.1/selenium-devtools-v85-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.18.1/selenium-edge-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.18.1/selenium-firefox-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-http/4.18.1/selenium-http-4.18.1.jar:/root/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.18.1/selenium-ie-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.18.1/selenium-remote-driver-4.18.1.jar:/root/.m2/repository/com/google/guava/guava/33.0.0-jre/guava-33.0.0-jre.jar:/root/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/root/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.23.0/error_prone_annotations-2.23.0.jar:/root/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/root/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api/1.35.0/opentelemetry-api-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-context/1.35.0/opentelemetry-context-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.35.0/opentelemetry-exporter-logging-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.35.0/opentelemetry-sdk-common-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.35.0/opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.35.0/opentelemetry-sdk-extension-autoconfigure-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.35.0-alpha/opentelemetry-api-events-1.35.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.35.0/opentelemetry-sdk-trace-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.35.0-alpha/opentelemetry-extension-incubator-1.35.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.35.0/opentelemetry-sdk-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.35.0/opentelemetry-sdk-metrics-1.35.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.35.0/opentelemetry-sdk-logs-1.35.0.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-os/4.18.1/selenium-os-4.18.1.jar:/root/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.18.1/selenium-safari-driver-4.18.1.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-support/4.18.1/selenium-support-4.18.1.jar:/root/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/root/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/root/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/root/.m2/repository/io/github/bonigarcia/webdrivermanager/5.7.0/webdrivermanager-5.7.0.jar:/root/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/root/.m2/repository/com/github/docker-java/docker-java/3.3.5/docker-java-3.3.5.jar:/root/.m2/repository/com/github/docker-java/docker-java-core/3.3.5/docker-java-core-3.3.5.jar:/root/.m2/repository/com/github/docker-java/docker-java-api/3.3.5/docker-java-api-3.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/root/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/root/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/root/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/root/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/root/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.5/docker-java-transport-httpclient5-3.3.5.jar:/root/.m2/repository/com/github/docker-java/docker-java-transport/3.3.5/docker-java-transport-3.3.5.jar:/root/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/root/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/root/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/root/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/root/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/root/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/root/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/root/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/root/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/root/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/root/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:"/>
+    <property name="allure.results.directory" value="/app/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/opt/java/openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/app"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/app/target/surefire/surefirebooter-20260604222727207_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.3+9-LTS"/>
+    <property name="user.name" value="root"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.12.76-linuxkit"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.3+9"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.3"/>
+    <property name="user.dir" value="/app"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.3+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="tc01_resultsSectionHiddenOnLoad" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.119">
+    <system-out><![CDATA[...
+... TestNG 7.9.0 by Cédric Beust (cedric@beust.com)
+...
+
+22:27:29.382 [main] INFO  c.c.r.tests.RebalancingTest - App URL resolved: file:/app/src/test/resources/index.html
+22:27:29.386 [main] INFO  c.c.rebalancing.utils.DriverManager - Initialising ChromeDriver...
+22:27:32.507 [main] DEBUG c.c.rebalancing.utils.DriverManager - ChromeDriver binary resolved by WebDriverManager
+22:27:32.531 [main] DEBUG c.c.rebalancing.utils.DriverManager - ChromeOptions configured: headless, no-sandbox, window=1440x900
+22:27:36.249 [main] INFO  c.c.rebalancing.utils.DriverManager - ChromeDriver started successfully
+22:27:36.250 [main] INFO  c.c.r.tests.RebalancingTest - ChromeDriver initialised for test class
+22:27:36.286 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:37.540 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 10:27:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 149
+Jun 04, 2026 10:27:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 149.0.7827.53. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc02_pageTitle" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.029">
+    <system-out><![CDATA[22:27:37.804 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:37.971 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc02b_calculateButtonVisibleAndEnabled" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.068">
+    <system-out><![CDATA[22:27:38.002 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:38.074 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc03_resultsSectionVisibleAfterCalculate" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.2">
+    <system-out><![CDATA[22:27:38.146 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:38.222 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc04_resetHidesResults" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.196">
+    <system-out><![CDATA[22:27:38.427 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:38.489 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc05_ibmActionIsBuy" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.134">
+    <system-out><![CDATA[22:27:38.692 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:38.737 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc06_ibmSharesToBuy" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.106">
+    <system-out><![CDATA[22:27:38.875 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:38.918 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc07_msftActionIsHold" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.15">
+    <system-out><![CDATA[22:27:39.030 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:39.103 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc08_orclActionIsSell" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.12">
+    <system-out><![CDATA[22:27:39.258 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:39.308 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc09_orclSharesToSell" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.101">
+    <system-out><![CDATA[22:27:39.432 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:39.476 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc10_aaplHold" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.124">
+    <system-out><![CDATA[22:27:39.581 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:39.647 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc11_hdHold" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.13">
+    <system-out><![CDATA[22:27:39.776 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:39.817 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc12_resultRowCount" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.074">
+    <system-out><![CDATA[22:27:39.951 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:39.988 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc13_ibmDollarAmount" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.138">
+    <system-out><![CDATA[22:27:40.067 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:40.102 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc14_orclDollarAmount" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.087">
+    <system-out><![CDATA[22:27:40.245 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:40.304 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc15_msftDollarAmountZero" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.081">
+    <system-out><![CDATA[22:27:40.394 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:40.432 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc16_ibmVarianceDisplay" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.091">
+    <system-out><![CDATA[22:27:40.517 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:40.561 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc17_orclVarianceDisplay" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.099">
+    <system-out><![CDATA[22:27:40.657 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:40.699 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc18_zeroPriceShowsError" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.491">
+    <system-out><![CDATA[22:27:40.802 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:40.845 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc19_zeroTotalAssetsShowsError" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.158">
+    <system-out><![CDATA[22:27:41.339 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:41.415 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc19b_negativeTotalAssetsShowsError" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.152">
+    <system-out><![CDATA[22:27:41.577 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:41.613 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc20_largePortfolioScalesCorrectly" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.148">
+    <system-out><![CDATA[22:27:41.773 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:41.815 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc21_lowUnitPriceLargeShares" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.331">
+    <system-out><![CDATA[22:27:41.966 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:42.001 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc22_allZeroVarianceAllHold" classname="com.crd.rebalancing.tests.RebalancingTest" time="1.843">
+    <system-out><![CDATA[22:27:42.338 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:42.380 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc23_allSecuritiesNeedBuy" classname="com.crd.rebalancing.tests.RebalancingTest" time="1.478">
+    <system-out><![CDATA[22:27:44.229 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:44.285 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc24_allSecuritiesNeedSell" classname="com.crd.rebalancing.tests.RebalancingTest" time="1.703">
+    <system-out><![CDATA[22:27:45.768 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:45.807 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc25_ibmSharesForDifferentPortfolioSizes[100000, 66](1)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.242">
+    <system-out><![CDATA[22:27:47.545 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:47.661 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc25_ibmSharesForDifferentPortfolioSizes[200000, 133](2)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.185">
+    <system-out><![CDATA[22:27:47.911 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:47.954 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc25_ibmSharesForDifferentPortfolioSizes[50000, 33](3)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.156">
+    <system-out><![CDATA[22:27:48.145 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:48.190 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc25_ibmSharesForDifferentPortfolioSizes[1500000, 1000](4)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.18">
+    <system-out><![CDATA[22:27:48.348 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:48.452 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc25_ibmSharesForDifferentPortfolioSizes[1000, 0](5)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.161">
+    <system-out><![CDATA[22:27:48.637 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:48.688 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc26_correctSharesPerSecurity[IBM, 66, BUY](1)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.106">
+    <system-out><![CDATA[22:27:48.852 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:48.892 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc26_correctSharesPerSecurity[MSFT, 0, HOLD](2)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.14">
+    <system-out><![CDATA[22:27:49.004 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:49.042 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc26_correctSharesPerSecurity[ORCL, 45, SELL](3)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.11">
+    <system-out><![CDATA[22:27:49.184 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:49.227 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc26_correctSharesPerSecurity[AAPL, 0, HOLD](4)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.123">
+    <system-out><![CDATA[22:27:49.339 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:49.379 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc26_correctSharesPerSecurity[HD, 0, HOLD](5)" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.198">
+    <system-out><![CDATA[22:27:49.507 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:49.541 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc27_addedSecurityAppearsInResults" classname="com.crd.rebalancing.tests.RebalancingTest" time="1.581">
+    <system-out><![CDATA[22:27:49.743 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:49.783 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc28_calculatorActionBuy" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.013">
+    <system-out><![CDATA[22:27:51.368 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:51.409 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc29_calculatorActionSell" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.007">
+    <system-out><![CDATA[22:27:51.431 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:51.618 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc30_calculatorActionHold" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.004">
+    <system-out><![CDATA[22:27:51.634 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:51.675 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc31_shareCountUseFloor" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.002">
+    <system-out><![CDATA[22:27:51.683 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:51.723 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc32_dollarAmountFormula" classname="com.crd.rebalancing.tests.RebalancingTest" time="0.003">
+    <system-out><![CDATA[22:27:51.729 [main] DEBUG c.c.r.tests.RebalancingTest - Loading application page: file:/app/src/test/resources/index.html
+22:27:51.771 [main] DEBUG c.c.r.tests.RebalancingTest - Page loaded successfully
+]]></system-out>
+  </testcase>
+</testsuite>

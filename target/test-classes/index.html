@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Portfolio Rebalancing Calculator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: center; }
+    th { background: #f0f0f0; }
+    input[type=number] { width: 90px; padding: 4px; }
+    button { margin-top: 15px; padding: 8px 20px; font-size: 14px; cursor: pointer; }
+    #error { color: red; margin-top: 10px; }
+    .buy  { color: green; font-weight: bold; }
+    .sell { color: red; font-weight: bold; }
+    .hold { color: gray; }
+    #resultsSection { display: none; }
+  </style>
+</head>
+<body>
+  <h2>Portfolio Rebalancing Calculator</h2>
+
+  <label>Total Assets ($):
+    <input type="number" id="totalAssets" value="100000" min="0" step="1"/>
+  </label>
+
+  <table id="inputTable">
+    <thead>
+      <tr>
+        <th>Security</th>
+        <th>Target %</th>
+        <th>Current %</th>
+        <th>Unit Price ($)</th>
+      </tr>
+    </thead>
+    <tbody id="inputBody">
+      <tr>
+        <td><input type="text"   class="security"    value="IBM"/></td>
+        <td><input type="number" class="targetPct"   value="20"/></td>
+        <td><input type="number" class="currentPct"  value="10"/></td>
+        <td><input type="number" class="unitPrice"   value="150"/></td>
+      </tr>
+      <tr>
+        <td><input type="text"   class="security"    value="MSFT"/></td>
+        <td><input type="number" class="targetPct"   value="20"/></td>
+        <td><input type="number" class="currentPct"  value="20"/></td>
+        <td><input type="number" class="unitPrice"   value="90"/></td>
+      </tr>
+      <tr>
+        <td><input type="text"   class="security"    value="ORCL"/></td>
+        <td><input type="number" class="targetPct"   value="20"/></td>
+        <td><input type="number" class="currentPct"  value="30"/></td>
+        <td><input type="number" class="unitPrice"   value="220"/></td>
+      </tr>
+      <tr>
+        <td><input type="text"   class="security"    value="AAPL"/></td>
+        <td><input type="number" class="targetPct"   value="20"/></td>
+        <td><input type="number" class="currentPct"  value="20"/></td>
+        <td><input type="number" class="unitPrice"   value="450"/></td>
+      </tr>
+      <tr>
+        <td><input type="text"   class="security"    value="HD"/></td>
+        <td><input type="number" class="targetPct"   value="20"/></td>
+        <td><input type="number" class="currentPct"  value="20"/></td>
+        <td><input type="number" class="unitPrice"   value="70"/></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button id="addRowBtn" onclick="addRow()">+ Add Security</button>
+  <button id="calculateBtn" onclick="calculate()">Calculate Rebalancing</button>
+  <button id="resetBtn" onclick="resetForm()">Reset</button>
+
+  <div id="error"></div>
+
+  <div id="resultsSection">
+    <h3>Rebalancing Output</h3>
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Security</th>
+          <th>Target %</th>
+          <th>Current %</th>
+          <th>Target Variance %</th>
+          <th>Dollar Amount to Trade ($)</th>
+          <th>Unit Price ($)</th>
+          <th>Action</th>
+          <th id="sharesHeader">Shares to Buy/Sell</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody"></tbody>
+    </table>
+  </div>
+
+  <script>
+    function addRow() {
+      var tbody = document.getElementById('inputBody');
+      var tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td><input type="text"   class="security"   value=""/></td>' +
+        '<td><input type="number" class="targetPct"  value="0"/></td>' +
+        '<td><input type="number" class="currentPct" value="0"/></td>' +
+        '<td><input type="number" class="unitPrice"  value="0"/></td>';
+      tbody.appendChild(tr);
+    }
+
+    function resetForm() {
+      document.getElementById('error').textContent = '';
+      document.getElementById('resultsSection').style.display = 'none';
+      document.getElementById('resultsBody').innerHTML = '';
+    }
+
+    function calculate() {
+      var errorDiv = document.getElementById('error');
+      errorDiv.textContent = '';
+
+      var totalAssets = parseFloat(document.getElementById('totalAssets').value);
+      if (isNaN(totalAssets) || totalAssets <= 0) {
+        errorDiv.textContent = 'Error: Total assets must be greater than 0.';
+        return;
+      }
+
+      var rows = document.getElementById('inputBody').getElementsByTagName('tr');
+      var securities = [];
+
+      for (var i = 0; i < rows.length; i++) {
+        var name      = rows[i].querySelector('.security').value.trim();
+        var target    = parseFloat(rows[i].querySelector('.targetPct').value);
+        var current   = parseFloat(rows[i].querySelector('.currentPct').value);
+        var unitPrice = parseFloat(rows[i].querySelector('.unitPrice').value);
+
+        if (!name) continue;
+
+        if (isNaN(unitPrice) || unitPrice <= 0) {
+          errorDiv.textContent = 'Error: Unit price for ' + name + ' must be greater than 0.';
+          return;
+        }
+        if (isNaN(target) || target < 0 || isNaN(current) || current < 0) {
+          errorDiv.textContent = 'Error: Percentages for ' + name + ' must be non-negative.';
+          return;
+        }
+
+        securities.push({ name: name, target: target, current: current, unitPrice: unitPrice });
+      }
+
+      if (securities.length === 0) {
+        errorDiv.textContent = 'Error: No securities entered.';
+        return;
+      }
+
+      var resultsBody = document.getElementById('resultsBody');
+      resultsBody.innerHTML = '';
+
+      for (var j = 0; j < securities.length; j++) {
+        var sec = securities[j];
+        var variance      = sec.current - sec.target;           // +ve = sell, -ve = buy
+        var dollarAmount  = (Math.abs(variance) / 100) * totalAssets;
+        var shares        = Math.floor(dollarAmount / sec.unitPrice);
+
+        var action, cssClass;
+        if (variance < 0) {
+          action = 'BUY';
+          cssClass = 'buy';
+        } else if (variance > 0) {
+          action = 'SELL';
+          cssClass = 'sell';
+        } else {
+          action = 'HOLD';
+          cssClass = 'hold';
+          shares = 0;
+        }
+
+        var tr = document.createElement('tr');
+        tr.setAttribute('data-security', sec.name);
+        tr.innerHTML =
+          '<td>' + sec.name + '</td>' +
+          '<td>' + sec.target + '</td>' +
+          '<td>' + sec.current + '</td>' +
+          '<td class="variance">' + (-variance) + '</td>' +
+          '<td class="dollarAmount">' + dollarAmount.toFixed(2) + '</td>' +
+          '<td>' + sec.unitPrice + '</td>' +
+          '<td class="action ' + cssClass + '">' + action + '</td>' +
+          '<td class="shares">' + shares + '</td>';
+        resultsBody.appendChild(tr);
+      }
+
+      document.getElementById('resultsSection').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
