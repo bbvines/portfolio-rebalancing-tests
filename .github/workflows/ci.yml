@@ -117,7 +117,7 @@ jobs:
             --rm \
             -v ${{ github.workspace }}/target:/app/target \
             portfolio-rebalancing-tests \
-            mvn clean test allure:report --no-transfer-progress
+            mvn test allure:report --no-transfer-progress
 
       - name: Upload Docker Allure report
         if: always()
