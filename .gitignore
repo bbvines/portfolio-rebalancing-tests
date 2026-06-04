@@ -1,0 +1,34 @@
+# Maven build output
+target/
+
+# Allure local installation
+.allure/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.eclipse/
+.settings/
+.project
+.classpath
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# WebDriverManager cache
+.wdm/
+
+# Log files
+*.log
+logs/
+
+# Environment variables
+.env
