@@ -1,6 +1,10 @@
 # Portfolio Rebalancing Calculator – QA Test Suite
 **CRD / Alpha Platform Engineering – Technical Assessment**
 
+[![CI Pipeline](https://github.com/bbvines/portfolio-rebalancing-tests/actions/workflows/ci.yml/badge.svg)](https://github.com/bbvines/portfolio-rebalancing-tests/actions/workflows/ci.yml)
+
+📊 **[View Live Allure Report](https://bbvines.github.io/portfolio-rebalancing-tests/allure-report)**
+
 ---
 
 ## Tech Stack
