@@ -89,6 +89,15 @@ jobs:
           publish_dir: target/allure-report
           destination_dir: allure-report
 
+      - name: Print Allure Report URL
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        run: |
+          echo "=========================================="
+          echo "Allure Report published successfully!"
+          echo "View report at:"
+          echo "https://bbvines.github.io/portfolio-rebalancing-tests/allure-report"
+          echo "=========================================="
+
   # ── Job 3: Docker build and test ─────────────────────────────────────────
   docker:
     name: Docker Build & Test
